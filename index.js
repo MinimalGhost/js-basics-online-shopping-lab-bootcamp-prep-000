@@ -17,7 +17,7 @@ function addToCart(item) {
   var newObj = Object.assign({}, { [item]: randomInt() })
   cart.push(newObj)
   console.log(`${item} has been added to your cart.`)
- return cart
+ return cart;
 }
 
 function viewCart() {
@@ -50,7 +50,7 @@ function total() {
   	var itemPrice = (Object.keys(cart[i])[0]);
     totalPrice += cart[i][itemPrice]
   }
-  return totalPrice
+  return totalPrice;
 }
 
 function removeFromCart(item) {
@@ -72,5 +72,5 @@ function placeOrder(cardNumber) {
     console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
     cart.splice();
   }
-  return cart
+  return cart;
 }
